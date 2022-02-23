@@ -1,0 +1,31 @@
+{
+  "name": "@kadeluxe/ts-emit-import-alias",
+  "version": "0.0.1",
+  "description": "TypeScript transformer to rewrite emitted import paths according to path aliases specified in tsconfig",
+  "main": "dist/index-cjs.js",
+  "module": "dist/index-esm.js",
+  "scripts": {
+    "build": "ts-node build/build.ts",
+    "watch": "ts-node build/build.ts -w"
+  },
+  "keywords": [
+    "typescript",
+    "transformer",
+    "import",
+    "path",
+    "rewrite",
+    "alias"
+  ],
+  "author": "Kadeluxe",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.17",
+    "esbuild": "^0.14.21",
+    "esbuild-node-externals": "^1.4.1",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
